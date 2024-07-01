@@ -1,0 +1,22 @@
+local_path: /path/to/local/images
+host: remote.server.com
+user: your_username
+#password: your_password
+# Alternatively, use key_file instead of password:
+key_file: /path/to/your/private_key
+
+file_type_path:
+  dng: 
+    - /remote/path/to/dng
+  jpg: 
+    - /remote/path/to/jpg1
+    - /remote/path/to/jpg-2
+  thumbnail: 
+    - /remote/path/to/thumbnails
+
+output: /path/to/output/directory
+verbose: true
+thumbnail_suffix: -thumbnails
+valid_extensions:
+  - .dng
+  - .jpg
